@@ -5,8 +5,9 @@ The application called Face Swpr supports Selfie, Group and Live swapping of fac
 
 ## Dependencies
 * Unzip the file `opencv.framework.zip`. If the dependency for the OpenCv framework is missing, add it to your framworks in Xcode.
-* You'll need the file `shape_predictor_68_face_landmarks.dat`in you path. If it's missing, drag the file to you path in Xcode.
+* You'll need the file `shape_predictor_68_face_landmarks.dat`in you path. If it's missing, unzip the file `shape_predictor_68_face_landmarks.dat.zip` and drag the file to you path in Xcode.
 * The file `libdlib.a` is needed. Add it to frameworks if it's missing. dlib is built for iOS devices, which means that you can only use this project on iOS devices, and not on iOS emulators.
+
 
 ## Interface
 <p align="center">
