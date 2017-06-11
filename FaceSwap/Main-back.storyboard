@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16D30" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Prc-0F-R8k">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="K8T-wa-0lB">
+            <objects>
+                <viewController id="tUx-Lj-fvP" customClass="FSViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="989-Rb-yao"/>
+                        <viewControllerLayoutGuide type="bottom" id="dCQ-mc-UXC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sYj-gd-B59">
+                        <rect key="frame" x="0.0" y="64" width="414" height="623"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s9w-H1-JS2">
+                                <rect key="frame" x="0.0" y="579" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem image="ic_insert_photo" id="I6v-lw-Xa8">
+                                        <connections>
+                                            <action selector="albumButtonPressed:" destination="tUx-Lj-fvP" id="yvX-LI-Gnf"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem image="ic_swap_horiz" id="cqD-Q1-Wrx">
+                                        <connections>
+                                            <action selector="cycleImagesButtonPressed:" destination="tUx-Lj-fvP" id="fu5-xx-cHL"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Ony-3o-gWg"/>
+                                    <barButtonItem title="Swap!" id="ymE-il-UBm">
+                                        <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="swapPressed:" destination="tUx-Lj-fvP" id="iQh-zh-Cx2"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="qvY-28-1P1"/>
+                                    <barButtonItem systemItem="camera" id="jbm-yO-yQF">
+                                        <connections>
+                                            <action selector="cameraButtonPressed:" destination="tUx-Lj-fvP" id="LkA-HV-wHr"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="faceswap_logo" translatesAutoresizingMaskIntoConstraints="NO" id="cdF-yy-HSQ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="579"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Ada-gg-YRy">
+                                <rect key="frame" x="189" y="271" width="37" height="37"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                    </view>
+                    <navigationItem key="navigationItem" id="3Xs-gW-O9q">
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="I7E-gr-J5F">
+                            <rect key="frame" x="12" y="7" width="390" height="30"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                            <segments>
+                                <segment title="Photo 1"/>
+                                <segment title="Photo 2"/>
+                            </segments>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="switchModeChanged:" destination="tUx-Lj-fvP" eventType="valueChanged" id="0rO-tN-kFe"/>
+                            </connections>
+                        </segmentedControl>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="PortraitSwitch" destination="I7E-gr-J5F" id="dwq-QQ-4Yx"/>
+                        <outlet property="activityIndicator" destination="Ada-gg-YRy" id="FjZ-fA-SXi"/>
+                        <outlet property="cycleImageButton" destination="cqD-Q1-Wrx" id="Bam-hk-Q04"/>
+                        <outlet property="imgView" destination="cdF-yy-HSQ" id="QdO-Fa-nEs"/>
+                        <outlet property="swapButton" destination="ymE-il-UBm" id="iH7-7G-MUg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rQh-Fh-gbU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="847.82608695652175" y="610.59782608695662"/>
+        </scene>
+        <!--Result-->
+        <scene sceneID="ejn-5R-RsS">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qgz-vV-AWw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="ResultView" id="2Kc-gp-LFu" customClass="FSResultViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="i0E-e6-cwA"/>
+                        <viewControllerLayoutGuide type="bottom" id="oOx-it-D3b"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mlh-hp-tgW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IBe-X4-nz9">
+                                <rect key="frame" x="0.0" y="58" width="414" height="678"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Result" id="6aQ-Nu-l7A">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Lbd-5I-vlb">
+                            <connections>
+                                <action selector="saveImageButtonPressed:" destination="2Kc-gp-LFu" id="2Q1-uL-eIq"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="ImgResult" destination="IBe-X4-nz9" id="PmM-e5-SvL"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="848" y="2111"/>
+        </scene>
+        <!--Multi View Controller-->
+        <scene sceneID="Ouj-1K-z7m">
+            <objects>
+                <viewController id="HCQ-9F-cQf" customClass="FSMultiViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IW5-VQ-klJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Z18-UV-mp3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2Le-hO-mza">
+                        <rect key="frame" x="0.0" y="64" width="414" height="623"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gxY-YV-138">
+                                <rect key="frame" x="0.0" y="579" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem image="ic_insert_photo" id="MWY-QP-4kM">
+                                        <connections>
+                                            <action selector="albumButtonPressed:" destination="HCQ-9F-cQf" id="K8P-bM-kd7"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="6MC-EW-36B"/>
+                                    <barButtonItem title="Swap!" id="aMd-JY-fet">
+                                        <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="swapPressed:" destination="HCQ-9F-cQf" id="l2O-l8-JCQ"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="ZFI-Xi-Uil"/>
+                                    <barButtonItem systemItem="camera" id="nX0-sj-dN1">
+                                        <connections>
+                                            <action selector="cameraButtonPressed:" destination="HCQ-9F-cQf" id="yVk-Oa-Nvb"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="faceswap_logo" translatesAutoresizingMaskIntoConstraints="NO" id="Xk0-Ev-rqD">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="579"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="GMD-EP-nZc">
+                                <rect key="frame" x="189" y="271" width="37" height="37"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="vba-W9-Uf0">
+                        <nil key="title"/>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="GMD-EP-nZc" id="EdX-Je-Chz"/>
+                        <outlet property="imgView" destination="Xk0-Ev-rqD" id="Cs8-Ql-qgh"/>
+                        <outlet property="swapButton" destination="aMd-JY-fet" id="KAY-JM-RLj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ivn-mL-ATA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="847.82608695652175" y="-154.07608695652175"/>
+        </scene>
+        <!--Selfie-->
+        <scene sceneID="TNz-gk-Wzt">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uZ1-nr-eUg" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Selfie" image="ic_person_36pt" id="6b9-rH-dzw">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="keyPath">
+                                <color key="value" red="0.52053111791610718" green="1" blue="0.0020182186271995306" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="BYq-29-sGM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="tUx-Lj-fvP" kind="relationship" relationship="rootViewController" id="vrC-p3-DLz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SD5-ja-12k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-78" y="611"/>
+        </scene>
+        <!--Stream View Controller-->
+        <scene sceneID="0AE-gs-j6p">
+            <objects>
+                <viewController id="EHm-iq-3yi" customClass="FSStreamViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dld-G5-fv9"/>
+                        <viewControllerLayoutGuide type="bottom" id="H9a-Qi-jTY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JZa-5w-nH9">
+                        <rect key="frame" x="0.0" y="64" width="414" height="623"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="faceswap_logo" translatesAutoresizingMaskIntoConstraints="NO" id="0Qu-8j-yYz">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="579"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iwg-An-cHq">
+                                <rect key="frame" x="0.0" y="579" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem image="ic_insert_photo" id="etY-fb-vJU">
+                                        <connections>
+                                            <action selector="libraryButtonPressed:" destination="EHm-iq-3yi" id="Ax8-WM-xRd"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="dQO-XM-VVj"/>
+                                    <barButtonItem image="ic_videocam_36pt" id="cKb-48-ZRN">
+                                        <connections>
+                                            <action selector="streamButtonPressed:" destination="EHm-iq-3yi" id="XK3-Vv-sNw"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="brN-Fl-EgY"/>
+                                    <barButtonItem systemItem="camera" id="KIz-Ge-zys">
+                                        <connections>
+                                            <action selector="cameraButtonPressed:" destination="EHm-iq-3yi" id="gNh-3W-CDV"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="trash" id="Gte-5s-z9h">
+                                        <connections>
+                                            <action selector="trashButtonPressed:" destination="EHm-iq-3yi" id="ejf-Dn-pKX"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="h6V-U9-iZh">
+                        <nil key="title"/>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="WoG-Y7-Q0G">
+                            <rect key="frame" x="12" y="6.5" width="390" height="31"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                            <segments>
+                                <segment title="Front cam."/>
+                                <segment title="Rear cam."/>
+                            </segments>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="segmentChanged:" destination="EHm-iq-3yi" eventType="valueChanged" id="JCb-p1-BZp"/>
+                            </connections>
+                        </segmentedControl>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="cameraButton" destination="KIz-Ge-zys" id="8Li-lE-RrZ"/>
+                        <outlet property="imageView" destination="0Qu-8j-yYz" id="TVc-nO-n8I"/>
+                        <outlet property="libraryButton" destination="etY-fb-vJU" id="LmW-8b-reS"/>
+                        <outlet property="segment" destination="WoG-Y7-Q0G" id="pMp-bD-9a8"/>
+                        <outlet property="streamButton" destination="cKb-48-ZRN" id="b2P-2D-nH7"/>
+                        <outlet property="trashButton" destination="Gte-5s-z9h" id="xrg-nO-vpy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HBB-oQ-qsV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="847.82608695652175" y="1365.4891304347827"/>
+        </scene>
+        <!--Portrait Tab Bar Controller-->
+        <scene sceneID="lud-Qg-qoF">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Prc-0F-R8k" customClass="PortraitTabBarController" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="Gbe-ZI-oDP">
+                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="uZ1-nr-eUg" kind="relationship" relationship="viewControllers" id="hg7-BX-hWI"/>
+                        <segue destination="4hb-JQ-C0p" kind="relationship" relationship="viewControllers" id="B9S-ZT-iUu"/>
+                        <segue destination="6hP-Y5-FQp" kind="relationship" relationship="viewControllers" id="QFh-ly-E1X"/>
+                        <segue destination="Y2E-Qb-lsh" kind="relationship" relationship="viewControllers" id="VW2-gP-QNG"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n4Z-Om-LG6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1106" y="611"/>
+        </scene>
+        <!--Group-->
+        <scene sceneID="u0z-nK-qlE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4hb-JQ-C0p" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Group" image="ic_people_36pt" id="Ew4-ph-vea"/>
+                    <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="2B4-WM-f5p">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="HCQ-9F-cQf" kind="relationship" relationship="rootViewController" id="pna-Sv-ODp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Wp-IU-ZM8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-78" y="-154"/>
+        </scene>
+        <!--LiveSwap-->
+        <scene sceneID="B3L-uB-vfm">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6hP-Y5-FQp" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="LiveSwap" image="ic_videocam_36pt" selectedImage="ic_videocam_36pt" id="91V-ah-U7B"/>
+                    <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="jg0-ae-zEJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="EHm-iq-3yi" kind="relationship" relationship="rootViewController" id="heg-h3-dfK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mVU-85-L8l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-78" y="1367"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="lJ8-aG-k8b">
+            <objects>
+                <viewController id="c3M-PP-qv2" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XYg-FK-o4a"/>
+                        <viewControllerLayoutGuide type="bottom" id="4UG-kv-V7D"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8ZF-dE-zFe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="687"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QKo-je-id5">
+                                <rect key="frame" x="0.0" y="64" width="414" height="584"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hashiqi" translatesAutoresizingMaskIntoConstraints="NO" id="SnD-VS-jes">
+                                <rect key="frame" x="152" y="64" width="110" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5F7-Dw-YbP">
+                                <rect key="frame" x="0.0" y="648" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem style="plain" id="spT-Rg-dnX">
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Fxo-Sy-nAf">
+                                            <rect key="frame" x="20" y="7" width="97" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="start"/>
+                                            <connections>
+                                                <action selector="startButtonPressed:" destination="c3M-PP-qv2" eventType="touchUpInside" id="5S4-8B-Wc6"/>
+                                            </connections>
+                                        </button>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="jfY-iE-nhJ"/>
+                                    <barButtonItem style="plain" id="vRM-7y-6gr">
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="MAm-E1-Fm8">
+                                            <rect key="frame" x="299" y="7" width="95" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="stop"/>
+                                            <connections>
+                                                <action selector="stopButtonPressed:" destination="c3M-PP-qv2" eventType="touchUpInside" id="1YT-s5-5uq"/>
+                                            </connections>
+                                        </button>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="F3f-go-6QN"/>
+                    <connections>
+                        <outlet property="adornment" destination="SnD-VS-jes" id="TBn-YF-bgp"/>
+                        <outlet property="imageView" destination="QKo-je-id5" id="gqi-Qy-0Mo"/>
+                        <outlet property="start" destination="Fxo-Sy-nAf" id="TjG-Rq-aVW"/>
+                        <outlet property="stop" destination="MAm-E1-Fm8" id="xLR-q2-oih"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9sG-0r-wu4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="847.82608695652175" y="2828.804347826087"/>
+        </scene>
+        <!--add picture-->
+        <scene sceneID="ibt-6T-FGf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Y2E-Qb-lsh" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="add picture" id="59F-HZ-KYl"/>
+                    <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Mba-UH-bEH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="c3M-PP-qv2" kind="relationship" relationship="rootViewController" id="ezo-lO-Sjk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1bT-bZ-eui" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-78" y="2829"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="faceswap_logo" width="355" height="170"/>
+        <image name="hashiqi" width="1440" height="1280"/>
+        <image name="ic_insert_photo" width="24" height="24"/>
+        <image name="ic_people_36pt" width="36" height="36"/>
+        <image name="ic_person_36pt" width="36" height="36"/>
+        <image name="ic_swap_horiz" width="24" height="24"/>
+        <image name="ic_videocam_36pt" width="36" height="36"/>
+    </resources>
+    <color key="tintColor" red="0.0" green="0.47934520244598389" blue="0.99908632040023804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+</document>
