@@ -114,12 +114,13 @@
     * unconditionally on NEON instructions not crashing, otherwise we must
     * disable use of NEON instructions:
     */
-#  ifdef __ARM_NEON__
-#     define PNG_ARM_NEON_OPT 2
-#  else
-#     define PNG_ARM_NEON_OPT 0
-#  endif
-#endif
+// #  ifdef __ARM_NEON__
+// #     define PNG_ARM_NEON_OPT 2
+// #  else
+// #     define PNG_ARM_NEON_OPT 0
+// #  endif
+// #endif
+#define PNG_ARM_NEON_OPT 0
 
 #if PNG_ARM_NEON_OPT > 0
    /* NEON optimizations are to be at least considered by libpng, so enable the

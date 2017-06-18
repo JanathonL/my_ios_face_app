@@ -29,7 +29,6 @@
 		11F761DA1E354D18009FB874 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11F761D91E354D18009FB874 /* QuartzCore.framework */; };
 		11F761DC1E354D23009FB874 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11F761DB1E354D23009FB874 /* UIKit.framework */; };
 		11F761DE1E354D2C009FB874 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11F761DD1E354D2C009FB874 /* Foundation.framework */; };
-		E24E7C6B1EECCCC40071857C /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E24E7C6A1EECCCC30071857C /* opencv2.framework */; };
 		E24E7C731EECD9E20071857C /* classifiers in Resources */ = {isa = PBXBuildFile; fileRef = E24E7C711EECD9E20071857C /* classifiers */; };
 		E24E7C741EECD9E20071857C /* model in Resources */ = {isa = PBXBuildFile; fileRef = E24E7C721EECD9E20071857C /* model */; };
 		E24E7C761EECDBAC0071857C /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = E24E7C751EECDBAC0071857C /* AppDelegate.mm */; };
@@ -48,6 +47,21 @@
 		E24E7CCF1EECE1290071857C /* SVR_patch_expert.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E24E7CC31EECE1290071857C /* SVR_patch_expert.cpp */; };
 		E24E7CD21EECE46D0071857C /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = E24E7CD11EECE46D0071857C /* ViewController.mm */; };
 		E24E7CD41EECEBFE0071857C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E24E7CD31EECEBFE0071857C /* Main.storyboard */; };
+		E27E78971EF647D300236AEE /* UIView+YALConstraints.m in Sources */ = {isa = PBXBuildFile; fileRef = E27E78931EF647D300236AEE /* UIView+YALConstraints.m */; };
+		E27E78981EF647D300236AEE /* YALContextMenuTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = E27E78961EF647D300236AEE /* YALContextMenuTableView.m */; };
+		E27E789D1EF6480D00236AEE /* ContextMenuCell.mm in Sources */ = {isa = PBXBuildFile; fileRef = E27E789B1EF6480D00236AEE /* ContextMenuCell.mm */; };
+		E27E789E1EF6480D00236AEE /* ContextMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E27E789C1EF6480D00236AEE /* ContextMenuCell.xib */; };
+		E27E78A61EF648BE00236AEE /* YALNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = E27E78A51EF648BE00236AEE /* YALNavigationBar.m */; };
+		E27E78C31EF6605600236AEE /* RNGridMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = E27E78C21EF6605600236AEE /* RNGridMenu.m */; };
+		E27E78CE1EF660DE00236AEE /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = E27E78C51EF660DE00236AEE /* arrow.png */; };
+		E27E78CF1EF660DE00236AEE /* attachment.png in Resources */ = {isa = PBXBuildFile; fileRef = E27E78C61EF660DE00236AEE /* attachment.png */; };
+		E27E78D01EF660DE00236AEE /* block.png in Resources */ = {isa = PBXBuildFile; fileRef = E27E78C71EF660DE00236AEE /* block.png */; };
+		E27E78D11EF660DE00236AEE /* bluetooth.png in Resources */ = {isa = PBXBuildFile; fileRef = E27E78C81EF660DE00236AEE /* bluetooth.png */; };
+		E27E78D21EF660DE00236AEE /* cube.png in Resources */ = {isa = PBXBuildFile; fileRef = E27E78C91EF660DE00236AEE /* cube.png */; };
+		E27E78D31EF660DE00236AEE /* download.png in Resources */ = {isa = PBXBuildFile; fileRef = E27E78CA1EF660DE00236AEE /* download.png */; };
+		E27E78D41EF660DE00236AEE /* enter.png in Resources */ = {isa = PBXBuildFile; fileRef = E27E78CB1EF660DE00236AEE /* enter.png */; };
+		E27E78D51EF660DE00236AEE /* file.png in Resources */ = {isa = PBXBuildFile; fileRef = E27E78CC1EF660DE00236AEE /* file.png */; };
+		E27E78D61EF660DE00236AEE /* github.png in Resources */ = {isa = PBXBuildFile; fileRef = E27E78CD1EF660DE00236AEE /* github.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,7 +96,6 @@
 		11F761D91E354D18009FB874 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		11F761DB1E354D23009FB874 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		11F761DD1E354D2C009FB874 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		E24E7C6A1EECCCC30071857C /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 		E24E7C711EECD9E20071857C /* classifiers */ = {isa = PBXFileReference; lastKnownFileType = folder; name = classifiers; path = model/classifiers; sourceTree = "<group>"; };
 		E24E7C721EECD9E20071857C /* model */ = {isa = PBXFileReference; lastKnownFileType = folder; name = model; path = model/model; sourceTree = "<group>"; };
 		E24E7C751EECDBAC0071857C /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
@@ -116,6 +129,27 @@
 		E24E7CD01EECE46C0071857C /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		E24E7CD11EECE46D0071857C /* ViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
 		E24E7CD31EECEBFE0071857C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		E27E78921EF647D300236AEE /* UIView+YALConstraints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+YALConstraints.h"; path = "YALContextMenu/UIView+YALConstraints.h"; sourceTree = "<group>"; };
+		E27E78931EF647D300236AEE /* UIView+YALConstraints.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+YALConstraints.m"; path = "YALContextMenu/UIView+YALConstraints.m"; sourceTree = "<group>"; };
+		E27E78941EF647D300236AEE /* YALContextMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YALContextMenuCell.h; path = YALContextMenu/YALContextMenuCell.h; sourceTree = "<group>"; };
+		E27E78951EF647D300236AEE /* YALContextMenuTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YALContextMenuTableView.h; path = YALContextMenu/YALContextMenuTableView.h; sourceTree = "<group>"; };
+		E27E78961EF647D300236AEE /* YALContextMenuTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YALContextMenuTableView.m; path = YALContextMenu/YALContextMenuTableView.m; sourceTree = "<group>"; };
+		E27E789A1EF6480D00236AEE /* ContextMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContextMenuCell.h; path = ContextMenuCell/ContextMenuCell.h; sourceTree = "<group>"; };
+		E27E789B1EF6480D00236AEE /* ContextMenuCell.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ContextMenuCell.mm; path = ContextMenuCell/ContextMenuCell.mm; sourceTree = "<group>"; };
+		E27E789C1EF6480D00236AEE /* ContextMenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ContextMenuCell.xib; path = ContextMenuCell/ContextMenuCell.xib; sourceTree = "<group>"; };
+		E27E78A41EF648BE00236AEE /* YALNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALNavigationBar.h; sourceTree = "<group>"; };
+		E27E78A51EF648BE00236AEE /* YALNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALNavigationBar.m; sourceTree = "<group>"; };
+		E27E78C11EF6605600236AEE /* RNGridMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNGridMenu.h; sourceTree = "<group>"; };
+		E27E78C21EF6605600236AEE /* RNGridMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNGridMenu.m; sourceTree = "<group>"; };
+		E27E78C51EF660DE00236AEE /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
+		E27E78C61EF660DE00236AEE /* attachment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = attachment.png; sourceTree = "<group>"; };
+		E27E78C71EF660DE00236AEE /* block.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = block.png; sourceTree = "<group>"; };
+		E27E78C81EF660DE00236AEE /* bluetooth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bluetooth.png; sourceTree = "<group>"; };
+		E27E78C91EF660DE00236AEE /* cube.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cube.png; sourceTree = "<group>"; };
+		E27E78CA1EF660DE00236AEE /* download.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = download.png; sourceTree = "<group>"; };
+		E27E78CB1EF660DE00236AEE /* enter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = enter.png; sourceTree = "<group>"; };
+		E27E78CC1EF660DE00236AEE /* file.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = file.png; sourceTree = "<group>"; };
+		E27E78CD1EF660DE00236AEE /* github.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = github.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,7 +162,6 @@
 				118B72551E56428F00DBC6E5 /* libdlib.a in Frameworks */,
 				11F761DA1E354D18009FB874 /* QuartzCore.framework in Frameworks */,
 				11F761D81E354D0D009FB874 /* CoreVideo.framework in Frameworks */,
-				E24E7C6B1EECCCC40071857C /* opencv2.framework in Frameworks */,
 				11F761D61E354D05009FB874 /* CoreMedia.framework in Frameworks */,
 				11F761D41E354CFC009FB874 /* CoreImage.framework in Frameworks */,
 				11F761D21E354CF3009FB874 /* CoreGraphics.framework in Frameworks */,
@@ -163,6 +196,9 @@
 		113931661E172AEC0092BB5A /* FaceSwap */ = {
 			isa = PBXGroup;
 			children = (
+				E27E78C41EF660C500236AEE /* icons */,
+				E27E78991EF647FD00236AEE /* ContextMenuCell */,
+				E27E78911EF647C600236AEE /* YALContextMenu */,
 				E24E7C7C1EECE05B0071857C /* local */,
 				E24E7C771EECE0100071857C /* FaceARDetect */,
 				E24E7C711EECD9E20071857C /* classifiers */,
@@ -171,6 +207,8 @@
 				E24E7C751EECDBAC0071857C /* AppDelegate.mm */,
 				E24E7CD01EECE46C0071857C /* ViewController.h */,
 				E24E7CD11EECE46D0071857C /* ViewController.mm */,
+				E27E78C11EF6605600236AEE /* RNGridMenu.h */,
+				E27E78C21EF6605600236AEE /* RNGridMenu.m */,
 				113931731E172AEC0092BB5A /* Assets.xcassets */,
 				E24E7CD31EECEBFE0071857C /* Main.storyboard */,
 				118B72561E564AB300DBC6E5 /* LaunchScreen.storyboard */,
@@ -188,6 +226,8 @@
 				113931971E17F43C0092BB5A /* FSImageUtils.h */,
 				11731F041E675B9E0001F3D3 /* PortraitTabBarController.h */,
 				11731F051E675B9E0001F3D3 /* PortraitTabBarController.m */,
+				E27E78A41EF648BE00236AEE /* YALNavigationBar.h */,
+				E27E78A51EF648BE00236AEE /* YALNavigationBar.m */,
 			);
 			path = FaceSwap;
 			sourceTree = "<group>";
@@ -204,7 +244,6 @@
 			isa = PBXGroup;
 			children = (
 				118B72541E56428F00DBC6E5 /* libdlib.a */,
-				E24E7C6A1EECCCC30071857C /* opencv2.framework */,
 				11F761DD1E354D2C009FB874 /* Foundation.framework */,
 				11F761DB1E354D23009FB874 /* UIKit.framework */,
 				11F761D91E354D18009FB874 /* QuartzCore.framework */,
@@ -293,6 +332,44 @@
 			name = src;
 			sourceTree = "<group>";
 		};
+		E27E78911EF647C600236AEE /* YALContextMenu */ = {
+			isa = PBXGroup;
+			children = (
+				E27E78921EF647D300236AEE /* UIView+YALConstraints.h */,
+				E27E78931EF647D300236AEE /* UIView+YALConstraints.m */,
+				E27E78941EF647D300236AEE /* YALContextMenuCell.h */,
+				E27E78951EF647D300236AEE /* YALContextMenuTableView.h */,
+				E27E78961EF647D300236AEE /* YALContextMenuTableView.m */,
+			);
+			name = YALContextMenu;
+			sourceTree = "<group>";
+		};
+		E27E78991EF647FD00236AEE /* ContextMenuCell */ = {
+			isa = PBXGroup;
+			children = (
+				E27E789A1EF6480D00236AEE /* ContextMenuCell.h */,
+				E27E789B1EF6480D00236AEE /* ContextMenuCell.mm */,
+				E27E789C1EF6480D00236AEE /* ContextMenuCell.xib */,
+			);
+			name = ContextMenuCell;
+			sourceTree = "<group>";
+		};
+		E27E78C41EF660C500236AEE /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				E27E78C51EF660DE00236AEE /* arrow.png */,
+				E27E78C61EF660DE00236AEE /* attachment.png */,
+				E27E78C71EF660DE00236AEE /* block.png */,
+				E27E78C81EF660DE00236AEE /* bluetooth.png */,
+				E27E78C91EF660DE00236AEE /* cube.png */,
+				E27E78CA1EF660DE00236AEE /* download.png */,
+				E27E78CB1EF660DE00236AEE /* enter.png */,
+				E27E78CC1EF660DE00236AEE /* file.png */,
+				E27E78CD1EF660DE00236AEE /* github.png */,
+			);
+			name = icons;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -352,12 +429,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E27E78D61EF660DE00236AEE /* github.png in Resources */,
+				E27E78D31EF660DE00236AEE /* download.png in Resources */,
+				E27E78CF1EF660DE00236AEE /* attachment.png in Resources */,
 				E24E7CD41EECEBFE0071857C /* Main.storyboard in Resources */,
+				E27E78D21EF660DE00236AEE /* cube.png in Resources */,
 				E24E7C731EECD9E20071857C /* classifiers in Resources */,
+				E27E78D11EF660DE00236AEE /* bluetooth.png in Resources */,
+				E27E78D41EF660DE00236AEE /* enter.png in Resources */,
 				118B72571E564AB300DBC6E5 /* LaunchScreen.storyboard in Resources */,
 				113931741E172AEC0092BB5A /* Assets.xcassets in Resources */,
+				E27E789E1EF6480D00236AEE /* ContextMenuCell.xib in Resources */,
 				1139319A1E193F210092BB5A /* shape_predictor_68_face_landmarks.dat in Resources */,
+				E27E78D51EF660DE00236AEE /* file.png in Resources */,
 				E24E7C741EECD9E20071857C /* model in Resources */,
+				E27E78CE1EF660DE00236AEE /* arrow.png in Resources */,
+				E27E78D01EF660DE00236AEE /* block.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,10 +457,12 @@
 			files = (
 				E24E7CD21EECE46D0071857C /* ViewController.mm in Sources */,
 				E24E7C7A1EECE0330071857C /* FaceARDetectIOS.mm in Sources */,
+				E27E78A61EF648BE00236AEE /* YALNavigationBar.m in Sources */,
 				E24E7CCF1EECE1290071857C /* SVR_patch_expert.cpp in Sources */,
 				113931961E17F3E00092BB5A /* FSImageUtils.mm in Sources */,
 				E24E7CC51EECE1290071857C /* LandmarkDetectionValidator.cpp in Sources */,
 				E24E7CC41EECE1290071857C /* CCNF_patch_expert.cpp in Sources */,
+				E27E78C31EF6605600236AEE /* RNGridMenu.m in Sources */,
 				113931C11E213F690092BB5A /* FSMultiViewController.mm in Sources */,
 				11731F061E675B9E0001F3D3 /* PortraitTabBarController.m in Sources */,
 				E24E7CC71EECE1290071857C /* LandmarkDetectorModel.cpp in Sources */,
@@ -381,10 +470,13 @@
 				E24E7CC81EECE1290071857C /* LandmarkDetectorParameters.cpp in Sources */,
 				E24E7C761EECDBAC0071857C /* AppDelegate.mm in Sources */,
 				E24E7CCD1EECE1290071857C /* PDM.cpp in Sources */,
+				E27E78981EF647D300236AEE /* YALContextMenuTableView.m in Sources */,
 				11F761CC1E3549B1009FB874 /* FSStreamViewController.mm in Sources */,
 				113931691E172AEC0092BB5A /* main.m in Sources */,
+				E27E789D1EF6480D00236AEE /* ContextMenuCell.mm in Sources */,
 				113931B61E1AF2340092BB5A /* FSResultViewController.mm in Sources */,
 				E24E7CC61EECE1290071857C /* LandmarkDetectorFunc.cpp in Sources */,
+				E27E78971EF647D300236AEE /* UIView+YALConstraints.m in Sources */,
 				E24E7C841EECE0B60071857C /* GazeEstimation.cpp in Sources */,
 				113931B31E1AE3BC0092BB5A /* FSViewController.mm in Sources */,
 				E24E7CCE1EECE1290071857C /* stdafx.cpp in Sources */,
@@ -489,24 +581,36 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = V88L5ZXVR8;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				HEADER_SEARCH_PATHS = /usr/local/include;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers/Public/pop\"",
+					"\"${PODS_ROOT}/Headers/Public\"",
+				);
 				INFOPLIST_FILE = FaceSwap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "$(OTHER_LDFLAGS)";
+				PODS_ROOT = "${SRCROOT}/Pods";
 				PRODUCT_BUNDLE_IDENTIFIER = JanathonL;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/FaceSwap/lib/local/LandmarkDetector/include $(SRCROOT)/FaceSwap/lib/FaceARDetect $(SRCROOT)/FaceSwap/lib/local/GazeEstimate";
-				VALID_ARCHS = "arm64 armv7 armv7s";
+				VALID_ARCHS = "armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -515,25 +619,37 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = V88L5ZXVR8;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				"FRAMEWORK_SEARCH_PATHS[arch=*]" = /Users/alexander/code;
-				HEADER_SEARCH_PATHS = /usr/local/include;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers/Public/pop\"",
+					"\"${PODS_ROOT}/Headers/Public\"",
+				);
 				INFOPLIST_FILE = FaceSwap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "$(OTHER_LDFLAGS)";
+				PODS_ROOT = "${SRCROOT}/Pods";
 				PRODUCT_BUNDLE_IDENTIFIER = JanathonL;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/FaceSwap/lib/local/LandmarkDetector/include $(SRCROOT)/FaceSwap/lib/FaceARDetect $(SRCROOT)/FaceSwap/lib/local/GazeEstimate";
-				VALID_ARCHS = "arm64 armv7 armv7s";
+				VALID_ARCHS = "armv7 armv7s";
 			};
 			name = Release;
 		};

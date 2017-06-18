@@ -9,9 +9,9 @@
 #import <UIKit/UIKit.h>
 
 #import <opencv2/videoio/cap_ios.h>
+#import "RNGridMenu.h"
 
-
-@interface ViewController : UIViewController<CvVideoCameraDelegate>
+@interface ViewController : UIViewController<CvVideoCameraDelegate, RNGridMenuDelegate>
 
 //- (IBAction)startButtonPressed:(id)sender;
 @property (weak, nonatomic) IBOutlet UIButton *start;
