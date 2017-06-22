@@ -13,8 +13,10 @@
 #import "ViewController.h"
 
 @interface ContextMenuCell ()
-
 @end
+//extern int choice;
+extern imgClss imageClass;
+extern bool first;
 
 @implementation ContextMenuCell
 
@@ -35,19 +37,75 @@
     static int cnt = 0;
     cnt++;
     NSLog(@"%d",cnt);
-    if ((cnt == 31 || (cnt-32 > 0 &&(cnt-32)%20 == 0))) {
-        if ([self.menuTitleLabel.text isEqualToString:@"Send message"]) {
+    //if(cnt>=41){
+    if ((cnt == 62 || (cnt-62 > 0 &&(cnt-62)%38 == 0))) {
+        printf("%d\n",first);
+        if ([self.menuTitleLabel.text isEqualToString:@"Hat"]&&first==true) {
             //showGrid就是二次选择按钮展示
-            [self showGrid];
+            //[self showGrid];
             NSLog(@"%@",self.menuTitleLabel.text);
+            imageClass^=HAT;
+            //printf("%d",imageClass);
+            //[Example instanceCount]
+            //imageClass=NONE;
+            first=false;
+            printf("hat\n");
             
         }
+        if ([self.menuTitleLabel.text isEqualToString:@"Glass"]&&first==true) {
+            imageClass^=GLASS;
+            //int i=2;
+            //choice=1;
+            //printf("%d\n",choice);
+            first=false;
+            printf("glass\n");
+        }
+        if ([self.menuTitleLabel.text isEqualToString:@"Beard"]&&first==true) {
+            imageClass^=BEARD;
+            //printf("%d\n",imageClass);
+            printf("beard\n");
+            first=false;
+        }
+        if ([self.menuTitleLabel.text isEqualToString:@"Face"]&&first==true) {
+            imageClass^=FACE;
+            //printf("%d\n",imageClass);
+            printf("face\n");
+            first=false;
+        }
+        if ([self.menuTitleLabel.text isEqualToString:@"Necklace"]&&first==true) {
+            imageClass^=NECKLACE;
+            printf("necklace\n");
+            first=false;
+        }
+        if ([self.menuTitleLabel.text isEqualToString:@"Bow"]&&first==true) {
+            imageClass^=BOW;
+            printf("bow\n");
+            first=false;
+        }
+        if ([self.menuTitleLabel.text isEqualToString:@"LeftEye"]&&first==true) {
+            imageClass^=LEFTEYE;
+            printf("left\n");
+            first=false;
+        }
+        if ([self.menuTitleLabel.text isEqualToString:@"RightEye"]&&first==true) {
+            imageClass^=RIGHTEYE;
+            printf("right\n");
+            first=false;
+        }
+        if ([self.menuTitleLabel.text isEqualToString:@"Mouth"]&&first==true) {
+            imageClass^=MOUTH;
+            first=false;
+        }
+        if ([self.menuTitleLabel.text isEqualToString:@"Ear"]&&first==true) {
+            imageClass^=EAR;
+            first=false;
+        }
+        if ([self.menuTitleLabel.text isEqualToString:@"Pipe"]&&first==true) {
+            imageClass^=CIGARRETE;
+            first=false;
+        }
+        //cnt=0;
     }
-    
-
-    
-    
-
 }
 
 

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0393213B1EF907FF007D6CB3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0393213A1EF907FF007D6CB3 /* Images.xcassets */; };
+		0393213D1EF9085D007D6CB3 /* yyjIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0393213C1EF9085D007D6CB3 /* yyjIcon.png */; };
 		113931691E172AEC0092BB5A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 113931681E172AEC0092BB5A /* main.m */; };
 		113931741E172AEC0092BB5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 113931731E172AEC0092BB5A /* Assets.xcassets */; };
 		1139318A1E17326C0092BB5A /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 113931891E17326C0092BB5A /* Accelerate.framework */; };
@@ -65,6 +67,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0393213A1EF907FF007D6CB3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0393213C1EF9085D007D6CB3 /* yyjIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = yyjIcon.png; path = FaceSwap/Assets.xcassets/yyjIcon.png; sourceTree = "<group>"; };
 		113931641E172AEC0092BB5A /* FaceSwap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceSwap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		113931681E172AEC0092BB5A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1139316A1E172AEC0092BB5A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -178,6 +182,7 @@
 		1139315B1E172AEC0092BB5A = {
 			isa = PBXGroup;
 			children = (
+				0393213C1EF9085D007D6CB3 /* yyjIcon.png */,
 				113931991E193F210092BB5A /* shape_predictor_68_face_landmarks.dat */,
 				113931661E172AEC0092BB5A /* FaceSwap */,
 				113931651E172AEC0092BB5A /* Products */,
@@ -228,6 +233,7 @@
 				11731F051E675B9E0001F3D3 /* PortraitTabBarController.m */,
 				E27E78A41EF648BE00236AEE /* YALNavigationBar.h */,
 				E27E78A51EF648BE00236AEE /* YALNavigationBar.m */,
+				0393213A1EF907FF007D6CB3 /* Images.xcassets */,
 			);
 			path = FaceSwap;
 			sourceTree = "<group>";
@@ -440,11 +446,13 @@
 				118B72571E564AB300DBC6E5 /* LaunchScreen.storyboard in Resources */,
 				113931741E172AEC0092BB5A /* Assets.xcassets in Resources */,
 				E27E789E1EF6480D00236AEE /* ContextMenuCell.xib in Resources */,
+				0393213B1EF907FF007D6CB3 /* Images.xcassets in Resources */,
 				1139319A1E193F210092BB5A /* shape_predictor_68_face_landmarks.dat in Resources */,
 				E27E78D51EF660DE00236AEE /* file.png in Resources */,
 				E24E7C741EECD9E20071857C /* model in Resources */,
 				E27E78CE1EF660DE00236AEE /* arrow.png in Resources */,
 				E27E78D01EF660DE00236AEE /* block.png in Resources */,
+				0393213D1EF9085D007D6CB3 /* yyjIcon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -580,7 +588,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = V88L5ZXVR8;
 				ENABLE_BITCODE = NO;
@@ -618,7 +627,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = V88L5ZXVR8;
 				ENABLE_BITCODE = NO;

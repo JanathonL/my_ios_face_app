@@ -48,7 +48,7 @@ cv::Mat_<double> visualise_tracking(cv::Mat& captured_image, cv::Mat_<float>& de
     // Only draw if the reliability is reasonable, the value is slightly ad-hoc
     if (detection_certainty < visualisation_boundary)
     {
-        LandmarkDetector::Draw(captured_image, face_model);
+        //LandmarkDetector::Draw(captured_image, face_model);
         //printf("res:x-%dy-%d\n",res[0],res[1]);
 //        double vis_certainty = detection_certainty;
 //        if (vis_certainty > 1)

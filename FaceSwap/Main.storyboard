@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16D30" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Prc-0F-R8k">
-    <device id="retina5_5" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Prc-0F-R8k">
+    <device id="ipad10_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -18,11 +18,11 @@
                         <viewControllerLayoutGuide type="bottom" id="dCQ-mc-UXC"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="sYj-gd-B59">
-                        <rect key="frame" x="0.0" y="64" width="414" height="623"/>
+                        <rect key="frame" x="0.0" y="64" width="834" height="999"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s9w-H1-JS2">
-                                <rect key="frame" x="0.0" y="579" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="955" width="834" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
                                     <barButtonItem image="ic_insert_photo" id="I6v-lw-Xa8">
@@ -50,8 +50,8 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="faceswap_logo" translatesAutoresizingMaskIntoConstraints="NO" id="cdF-yy-HSQ">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="579"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="yyjIcon" translatesAutoresizingMaskIntoConstraints="NO" id="cdF-yy-HSQ">
+                                <rect key="frame" x="0.0" y="0.0" width="834" height="955"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Ada-gg-YRy">
@@ -64,7 +64,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="3Xs-gW-O9q">
                         <segmentedControl key="titleView" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="I7E-gr-J5F">
-                            <rect key="frame" x="12" y="7" width="390" height="30"/>
+                            <rect key="frame" x="222" y="7" width="390" height="30"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                             <segments>
                                 <segment title="Photo 1"/>
@@ -98,11 +98,11 @@
                         <viewControllerLayoutGuide type="bottom" id="oOx-it-D3b"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="mlh-hp-tgW">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IBe-X4-nz9">
-                                <rect key="frame" x="0.0" y="58" width="414" height="678"/>
+                                <rect key="frame" x="0.0" y="87.5" width="834" height="1024.5"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                             </imageView>
                         </subviews>
@@ -132,11 +132,11 @@
                         <viewControllerLayoutGuide type="bottom" id="Z18-UV-mp3"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="2Le-hO-mza">
-                        <rect key="frame" x="0.0" y="64" width="414" height="623"/>
+                        <rect key="frame" x="0.0" y="64" width="834" height="999"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gxY-YV-138">
-                                <rect key="frame" x="0.0" y="579" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="955" width="834" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
                                     <barButtonItem image="ic_insert_photo" id="MWY-QP-4kM">
@@ -159,8 +159,8 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="faceswap_logo" translatesAutoresizingMaskIntoConstraints="NO" id="Xk0-Ev-rqD">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="579"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="yyjIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Xk0-Ev-rqD">
+                                <rect key="frame" x="0.0" y="0.0" width="834" height="955"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="GMD-EP-nZc">
@@ -219,15 +219,15 @@
                         <viewControllerLayoutGuide type="bottom" id="H9a-Qi-jTY"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="JZa-5w-nH9">
-                        <rect key="frame" x="0.0" y="64" width="414" height="623"/>
+                        <rect key="frame" x="0.0" y="64" width="834" height="999"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="faceswap_logo" translatesAutoresizingMaskIntoConstraints="NO" id="0Qu-8j-yYz">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="579"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="yyjIcon" translatesAutoresizingMaskIntoConstraints="NO" id="0Qu-8j-yYz">
+                                <rect key="frame" x="0.0" y="0.0" width="834" height="955"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iwg-An-cHq">
-                                <rect key="frame" x="0.0" y="579" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="955" width="834" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
                                     <barButtonItem image="ic_insert_photo" id="etY-fb-vJU">
@@ -260,7 +260,7 @@
                     <navigationItem key="navigationItem" id="h6V-U9-iZh">
                         <nil key="title"/>
                         <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="WoG-Y7-Q0G">
-                            <rect key="frame" x="12" y="6.5" width="390" height="31"/>
+                            <rect key="frame" x="222" y="6.5" width="390" height="31"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                             <segments>
                                 <segment title="Front cam."/>
@@ -375,11 +375,11 @@
                         <viewControllerLayoutGuide type="bottom" id="0vK-uW-v7c"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="qYc-nm-UIq">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="687"/>
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1063"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7wn-YR-v1p">
-                                <rect key="frame" x="0.0" y="643" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="1019" width="834" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
                                     <barButtonItem style="plain" id="OQ4-1o-RNm">
@@ -401,32 +401,101 @@
                                 </items>
                             </toolbar>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hyJ-Au-JcR">
-                                <rect key="frame" x="0.0" y="64" width="414" height="579"/>
+                                <rect key="frame" x="0.0" y="64" width="834" height="955"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hashiqi" translatesAutoresizingMaskIntoConstraints="NO" id="rIS-T6-Pql">
-                                <rect key="frame" x="132" y="64" width="149" height="113"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W5x-8K-HS1">
+                                <rect key="frame" x="154" y="266" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="left_eye2" translatesAutoresizingMaskIntoConstraints="NO" id="mVK-hX-tg3" userLabel="LeftEye">
+                                <rect key="frame" x="87" y="279" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pipe" translatesAutoresizingMaskIntoConstraints="NO" id="PjA-nS-w34" userLabel="Cigarette">
+                                <rect key="frame" x="87" y="279" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bow2" translatesAutoresizingMaskIntoConstraints="NO" id="zjN-41-d48" userLabel="Bow">
+                                <rect key="frame" x="87" y="279" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mouth1" translatesAutoresizingMaskIntoConstraints="NO" id="hRa-EX-9GX" userLabel="Mouth">
+                                <rect key="frame" x="87" y="279" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="beard1" translatesAutoresizingMaskIntoConstraints="NO" id="5nr-4R-HnZ" userLabel="Beard">
+                                <rect key="frame" x="87" y="279" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="face1" translatesAutoresizingMaskIntoConstraints="NO" id="Xlp-UD-h7N" userLabel="Face">
+                                <rect key="frame" x="87" y="279" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ear1" translatesAutoresizingMaskIntoConstraints="NO" id="dpf-wv-TxQ" userLabel="Ear">
+                                <rect key="frame" x="87" y="279" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="glass1" translatesAutoresizingMaskIntoConstraints="NO" id="g5C-tU-Te4" userLabel="Glass">
+                                <rect key="frame" x="132" y="287" width="149" height="113"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="right_eye1" translatesAutoresizingMaskIntoConstraints="NO" id="qoG-O3-3xg" userLabel="RightEye">
+                                <rect key="frame" x="87" y="279" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hat3" translatesAutoresizingMaskIntoConstraints="NO" id="Cki-XV-jki" userLabel="Hat">
+                                <rect key="frame" x="87" y="279" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="necklace1" translatesAutoresizingMaskIntoConstraints="NO" id="3MR-eE-fq2" userLabel="NeckLace">
+                                <rect key="frame" x="87" y="279" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="shark2" translatesAutoresizingMaskIntoConstraints="NO" id="d3t-ID-C3U" userLabel="shark">
+                                <rect key="frame" x="297" y="467" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bigmouth" translatesAutoresizingMaskIntoConstraints="NO" id="1Yi-hV-u2S" userLabel="BigMouth">
+                                <rect key="frame" x="297" y="467" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TgM-OR-Gqz">
+                                <rect key="frame" x="0.0" y="939" width="834" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="43b-oJ-rP2"/>
                     <connections>
-                        <outlet property="adornment" destination="rIS-T6-Pql" id="Quj-We-PJG"/>
+                        <outlet property="Beard" destination="5nr-4R-HnZ" id="TBg-LN-36r"/>
+                        <outlet property="BigMouth" destination="1Yi-hV-u2S" id="RLj-rW-3L8"/>
+                        <outlet property="Bow" destination="zjN-41-d48" id="RbG-8G-bi6"/>
+                        <outlet property="Cigarette" destination="PjA-nS-w34" id="nL0-t5-crw"/>
+                        <outlet property="Ear" destination="dpf-wv-TxQ" id="Mrs-5Q-Pbr"/>
+                        <outlet property="Face" destination="Xlp-UD-h7N" id="qS3-XN-dpd"/>
+                        <outlet property="Glass" destination="g5C-tU-Te4" id="TlR-MZ-bdL"/>
+                        <outlet property="Hat" destination="Cki-XV-jki" id="TVr-sk-DY7"/>
+                        <outlet property="LeftEye" destination="mVK-hX-tg3" id="m2N-xG-rcy"/>
+                        <outlet property="Mouth" destination="hRa-EX-9GX" id="FrF-tD-Imw"/>
+                        <outlet property="NeckLace" destination="3MR-eE-fq2" id="YTb-Mv-G5Z"/>
+                        <outlet property="RightEye" destination="qoG-O3-3xg" id="eQN-dq-C5B"/>
+                        <outlet property="ScrollView" destination="TgM-OR-Gqz" id="rLg-V1-tHo"/>
+                        <outlet property="Shark" destination="d3t-ID-C3U" id="Vbm-Jc-uPz"/>
                         <outlet property="imageView" destination="hyJ-Au-JcR" id="idT-Ea-Vdj"/>
                         <outlet property="start" destination="8j9-gI-swi" id="0E8-xd-4Q2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z37-SI-UMp" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="847.82608695652175" y="2944.5652173913045"/>
+            <point key="canvasLocation" x="847.48201438848923" y="2944.4244604316546"/>
         </scene>
-        <!--add picture-->
+        <!--make up-->
         <scene sceneID="FJn-8e-sE4">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PfO-ST-xHX" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="add picture" image="ic_add_pic" id="MPY-Xb-gkn"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PfO-ST-xHX" userLabel="make up" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Make Up" image="ic_add_pic" id="MPY-Xb-gkn" userLabel="make up"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="kKl-kT-x1h">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -443,14 +512,26 @@
         </scene>
     </scenes>
     <resources>
-        <image name="faceswap_logo" width="355" height="170"/>
-        <image name="hashiqi" width="1440" height="1280"/>
+        <image name="beard1" width="250" height="97"/>
+        <image name="bigmouth" width="563" height="481"/>
+        <image name="bow2" width="123" height="77"/>
+        <image name="ear1" width="225" height="125"/>
+        <image name="face1" width="200" height="163"/>
+        <image name="glass1" width="150" height="38"/>
+        <image name="hat3" width="128" height="128"/>
         <image name="ic_add_pic" width="27" height="20"/>
         <image name="ic_insert_photo" width="24" height="24"/>
         <image name="ic_people_36pt" width="36" height="36"/>
         <image name="ic_person_36pt" width="36" height="36"/>
         <image name="ic_swap_horiz" width="24" height="24"/>
         <image name="ic_videocam_36pt" width="36" height="36"/>
+        <image name="left_eye2" width="120" height="77"/>
+        <image name="mouth1" width="190" height="97"/>
+        <image name="necklace1" width="200" height="144"/>
+        <image name="pipe" width="500" height="500"/>
+        <image name="right_eye1" width="81" height="50"/>
+        <image name="shark2" width="540" height="425"/>
+        <image name="yyjIcon" width="512" height="512"/>
     </resources>
     <color key="tintColor" red="0.0" green="0.47934520244598389" blue="0.99908632040023804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
